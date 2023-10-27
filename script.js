@@ -30,7 +30,8 @@ function playRound(playerSelection, computerSelection){
 function game(){
     let i = 0;
     while (i<5){
-        console.log(playRound("rock",getComputerChoice()));
+        playerChoice = prompt("What's your choice?")
+        console.log(playRound(playerChoice,getComputerChoice()));
         i++;
     }
 }
